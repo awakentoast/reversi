@@ -5,13 +5,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reversi.HelloController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reversi.controllers.ReversiController">
    <children>
       <Text fx:id="textPlayerTurn" layoutX="375.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Canvas fx:id="canvas" height="600.0" layoutX="100.0" layoutY="100.0" onMouseClicked="#placeStone" width="600.0" />
+      <Canvas fx:id="canvas" height="600.0" layoutX="100.0" layoutY="100.0" onMouseClicked="#doTurn" width="600.0" />
       <Button fx:id="helpButton" layoutX="300.0" layoutY="50.0" mnemonicParsing="false" onAction="#helpButtonPressed" text="Help" />
       <Button fx:id="newGameButton" layoutX="450.0" layoutY="50.0" mnemonicParsing="false" onAction="#newGame" text="New Game" />
-      <Pane fx:id="panePopup" layoutX="-200.0" layoutY="-200.0" prefHeight="50.0" prefWidth="300.0">
+      <Pane fx:id="winnerAnouncementPane" layoutX="-200.0" layoutY="-200.0" prefHeight="50.0" prefWidth="300.0">
          <children>
             <Text fx:id="textWinner" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" x="25.0" y="30.0" />
          </children>
