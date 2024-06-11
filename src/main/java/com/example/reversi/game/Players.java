@@ -11,7 +11,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 public class Players {
-    public static final List<Player> playerList = new ArrayList<>();
+    private List<Player> playerList = new ArrayList<>();
 
     public void addPlayer(Player player) {
         playerList.add(player);
